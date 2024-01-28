@@ -2,7 +2,7 @@ repeat wait() until game:IsLoaded()
 
 local c = game.Players.LocalPlayer.UserId
 
-if getgenv().Setting.StartFruitFarm == true and getgenv().Setting.Key == "4623478223763gfhsgfvcvzc6734278" and c == 5096897688 or c == 3229297325 or c == 5459796605 or c == 5084947385 or c == 3259024331 or c == 5064752130 or c == 4759805348 or c == 5285334225 or c == 3047821539 or c == 5321336387 or c == 5353763627 or c == 5304067289 or c == 1159843614 or c == 1757614248 or c == 4174257152 or c == 2841129854 or c == 3110889894 or c == 2871360164 or c == 5502487573 or c == 5500891915 or c == 529009258 or c == 4223690013 or c == 2976087019 or c == 5323941915 or c == 5217138407 or c == 5274854970 or c == 2057110373 then
+if getgenv().Setting.StartFruitFarm == true and getgenv().Setting.Key == "4623478223763gfhsgfvcvzc6734278" and c == 5096897688 or c == 3229297325 or c == 5459796605 or c == 5084947385 or c == 3259024331 or c == 5064752130 or c == 4759805348 or c == 5285334225 or c == 3047821539 or c == 5321336387 or c == 5353763627 or c == 5304067289 or c == 1159843614 or c == 1757614248 or c == 4174257152 or c == 2841129854 or c == 3110889894 or c == 2871360164 or c == 5502487573 or c == 5500891915 or c == 529009258 or c == 4223690013 or c == 2976087019 or c == 5323941915 or c == 5217138407 or c == 5274854970 or c == 2057110373 or c == 1144307249 then
 
 local Settings = {}
 local HttpService = game:GetService("HttpService")
