@@ -1,0 +1,25 @@
+name: Update Key
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at 00:00 UTC every day.
+
+jobs:
+  update-key:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Update Key in Script
+      run: |
+        KEY=$(openssl rand -hex 16) # Generates a 32-character hexadecimal key.
+        FILE_PATH='./Sksiejdnd' # Update this path to your script's path.
+        sed -i "s/getgenv().Setting.Key = \".*\"/getgenv().Setting.Key = \"${KEY}\"/" $FILE_PATH
+        
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff --staged --quiet || (git commit -m "Updated key" && git push)
